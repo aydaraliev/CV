@@ -78,7 +78,7 @@
 
 ✔ Обеспечил поддержку и масштабируемость процессов обработки данных для новых научных задач.
 
-**Стек:** Python, R, Bash, Linux, tabix, CLI-программы(vcftools, bcftools, plink2 etc.)
+**Стек:** Python, R, Bash, Linux, tabix, CLI-программы (vcftools, bcftools, plink2 etc.)
 
 
 ---
