@@ -101,7 +101,7 @@
 - **Анализ данных:** pandas, matplotlib, seaborn, scikit-learn, Jupyter
 - **API и Web:** REST, Flask
 - **DevOps:** git, Docker, CI/CD
-- **ОС:** Linux (Ubuntu, CentOS)
+- **ОС:** Linux (Ubuntu, Tuxedo OS)
 
 ---
 
