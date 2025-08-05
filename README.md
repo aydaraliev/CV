@@ -1,6 +1,9 @@
 # Алиев Айдар — Data Engineer
 
-![Моя фотография](./photo.jpg){ height=33%}
+<div align="center">
+  <img src="./photo.jpg" alt="Моя фотография" height="250">
+</div>
+
 
 ---
 > <div align="center">
