@@ -2,7 +2,7 @@
 
 <div align="center">
 
-![ ](photo.jpg){ height=150px }
+![ ](photo.jpg)
 
 **Инженер данных / Аналитик данных**  
 Python | SQL | Linux  
