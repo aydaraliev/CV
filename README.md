@@ -1,7 +1,5 @@
 # Алиев Айдар — Data Engineer
 
-<div align="center">
-
 ![ ](photo.jpg)
 
 **Инженер данных / Аналитик данных**  
@@ -9,16 +7,9 @@ Python | SQL | Linux
 Airflow | PostgreSQL | Pandas | PySpark | scikit-learn | Bash | R  
 Проживание: Москва, Россия
 
-</div>
+[📥 Скачать полное резюме](https://github.com/aydaraliev/CV/raw/main/CV_Aliev_data_engineer.pdf)
 
 ---
-
-<p align="center">
-<a href="CV_Aliev_data_engineer.pdf">📥 Скачать полное резюме</a>
-</p>
-
----
-
 ## 📌 Абстракт
 
 - Более 14 лет опыта работы с данными
@@ -184,10 +175,7 @@ Airflow | PostgreSQL | Pandas | PySpark | scikit-learn | Bash | R
 
 ## 📲 Telegram
 
-![QR для Telegram](./qr.png)
+![](./qr.png)
 
----
 
-[📥 Скачать полное резюме](CV_Aliev_data_engineer.pdf)
-
----
+[📥 Скачать полное резюме](https://github.com/aydaraliev/CV/raw/main/CV_Aliev_data_engineer.pdf)
