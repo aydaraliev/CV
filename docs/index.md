@@ -19,6 +19,7 @@ a:hover, summary:hover{ text-decoration:underline; }
 header p.view, header small, footer, .view, small{display:none!important;}
 a, summary{ color:var(--gold)!important; }
 a:hover, summary:hover{ text-decoration:underline; }
+.contact-header{ color:var(--gold); font-size:180%; margin-top:0; }
 </style>
 
 
