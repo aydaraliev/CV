@@ -1,4 +1,8 @@
 title: Айдар Алиев - Data Engineer
-description: Контакты
+description: |
+  контакты<br>
+  <img src="photo.jpg" alt="Айдар Алиев" style="width:140px;border-radius:8px;"><br>
+  📧 <a href="mailto:aidaraliev@gmail.com">aidaraliev@gmail.com</a><br>
+  <img src="qr.png" alt="Telegram QR" style="width:140px;">
 theme: jekyll-theme-minimal
 

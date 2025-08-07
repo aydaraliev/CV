@@ -5,14 +5,11 @@ title: "Aydar Aliev — Data Engineer"
 
 
 <style>
-    .btn, .project-tagline, .site-footer {
+.btn, .site-footer {
         display: none !important;
     }
 </style>
 
-![ ](photo.jpg)
-
-<p>📧 <a href="mailto:aidaraliev@gmail.com">aidaraliev@gmail.com</a></p>
 
 **Инженер данных / Аналитик данных**  
 Python | SQL | Linux  
