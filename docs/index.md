@@ -15,8 +15,8 @@ title: "Aydar Aliev — Data Engineer"
 a, summary{ color:var(--gold)!important; }
 a:hover, summary:hover{ text-decoration:underline; }
 
-/* hide leftover sidebar GitHub links */
-.sidebar .view, .sidebar small, .sidebar .download-source{display:none!important;}
+/* hide ALL sidebar footer elements */
+header p.view, header small, footer, .view, small{display:none!important;}
 a, summary{ color:var(--gold)!important; }
 a:hover, summary:hover{ text-decoration:underline; }
 </style>
