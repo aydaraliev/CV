@@ -3,7 +3,6 @@ layout: default
 title: "Aydar Aliev — Data Engineer"
 ---
 
-# Алиев Айдар — Data Engineer
 
 ![ ](photo.jpg)
 
