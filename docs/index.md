@@ -8,6 +8,11 @@ title: "Aydar Aliev — Data Engineer"
 /* Hide default theme buttons/footer */
 .btn, .site-footer {
         display: none !important;
+    }
+    a, summary {
+        color: #d4af37 !important;
+    }
+        display: none !important;
 }
 
 /* Brand green picked from the accent in profile photo */
