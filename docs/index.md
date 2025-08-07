@@ -230,10 +230,5 @@ function toggleInnotech() {
 
 ---
 
-## 📲 Telegram
-
-![](./qr.png)
-
-
 [📥 Скачать полное резюме](https://github.com/aydaraliev/CV/raw/main/CV_Aliev_data_engineer.pdf)
 
