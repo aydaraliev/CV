@@ -5,9 +5,42 @@ title: "Aydar Aliev — Data Engineer"
 
 
 <style>
+/* Hide default theme buttons/footer */
 .btn, .site-footer {
         display: none !important;
-    }
+}
+
+/* Brand green picked from the accent in profile photo */
+:root {
+        --brand-green: #39ae5b;
+}
+
+/* Make all default blue links/summary toggles the brand green */
+a, summary {
+        color: var(--brand-green) !important;
+}
+
+a:hover, summary:hover {
+        color: #2e8947 !important; /* darker on hover */
+        text-decoration: underline;
+}
+
+/* Tint (monochrome) icons like email & QR to brand green */
+img.icon-tint-green {
+        filter: invert(43%) sepia(35%) saturate(640%) hue-rotate(88deg) brightness(92%) contrast(88%);
+}
+
+/* Bigger profile photo */
+img.profile-photo {
+        width: 200px;
+}
+
+/* Contact header styling */
+.contact-header {
+        color: var(--brand-green);
+        font-size: 130%;
+        font-weight: 600;
+}
 </style>
 
 
