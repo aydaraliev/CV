@@ -1,11 +1,14 @@
-title: Айдар Алиев - Data Engineer
-description: |
-  <img src="photo.jpg" alt="Айдар Алиев" class="profile-photo" style="border-radius:8px;width:350px;">
-  <br>
-  <h2 style="color:var(--gold);font-size:180%;margin:0;">контакты</h2>
-  <br>
-  <img src="email.png" alt="email" style="width:270px;margin-top:6px;">
-  <br>
-  <img src="qr.png" alt="Telegram QR" style="width:285px;">
-  <div style="height:450px;"></div>
-theme: jekyll-theme-minimal
+title: "Your Name – CV"
+description: "Curriculum vitae and portfolio of Your Name"
+# Theme & build
+theme: minimal
+logo: /assets/img/avatar.jpg
+favicon: /assets/img/favicon.ico
+markdown: kramdown
+# Appearance
+minimal_mistakes_skin: default
+show_downloads: false
+# Contact / social
+github_username: yourhandle
+linkedin_username: yourhandle
+email: you@example.com
