@@ -4,7 +4,7 @@ description: |
   <br><br><br><br><br>
   <span class="contact-header">контакты</span>
   <br><br>
-<img src="email.png" alt="email" style="width:200px;margin-top:6px;">
+  <img src="email.png" alt="email" style="width:200px;margin-top:6px;">
   <br>
   <img src="qr.png" alt="Telegram QR" style="width:200px;">
 theme: jekyll-theme-minimal
