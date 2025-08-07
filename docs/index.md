@@ -12,6 +12,8 @@ title: "Aydar Aliev — Data Engineer"
 
 ![ ](photo.jpg)
 
+<p>📧 <a href="mailto:aidaraliev@gmail.com">aidaraliev@gmail.com</a></p>
+
 **Инженер данных / Аналитик данных**  
 Python | SQL | Linux  
 Airflow | PostgreSQL | Pandas | PySpark | scikit-learn | Bash | R  
