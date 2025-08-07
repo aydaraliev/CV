@@ -18,8 +18,9 @@ a:hover, summary:hover{ text-decoration:underline; }
 /* hide ALL sidebar footer elements */
 header p.view, header small, footer, .view, small{display:none!important;}
 
-/* center sidebar content vertically */
-header{display:flex!important;flex-direction:column!important;justify-content:center!important;}
+/* center sidebar content vertically - using wrapper approach */
+.wrapper { display:flex!important;align-items:center!important;min-height:100vh!important; }
+header { margin:auto 0!important; }
 a, summary{ color:var(--gold)!important; }
 a:hover, summary:hover{ text-decoration:underline; }
 </style>
