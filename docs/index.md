@@ -17,6 +17,9 @@ a:hover, summary:hover{ text-decoration:underline; }
 
 /* hide ALL sidebar footer elements */
 header p.view, header small, footer, .view, small{display:none!important;}
+
+/* center sidebar content vertically */
+header{display:flex!important;flex-direction:column!important;justify-content:center!important;}
 a, summary{ color:var(--gold)!important; }
 a:hover, summary:hover{ text-decoration:underline; }
 </style>
@@ -143,7 +146,7 @@ function toggleInnotech() {
 ✔ Разработал комплексный пайплайн на Airflow + pandas + ClickHouse для контроля качества витрин данных для аналитиков оперативного отдела. Качественные витрины позволили на ~7 часов сократить время, затрачиваемое на предобработку данных.  
 
 
-**Стек:** Стек: ETL/ELT, Python, SQL, ClickHouse, Airflow, pandas, openpyxl, requests, matplotlib, seaborn
+**Стек:** ETL/ELT, Python, SQL, ClickHouse, Airflow, pandas, openpyxl, requests, matplotlib, seaborn
 
 ---
 
@@ -152,21 +155,20 @@ function toggleInnotech() {
 *Исследовательская и образовательная деятельность в международных лабораториях и вузах, включая проектирование аналитических пайплайнов и преподавание Python/аналитики данных.*  
 **Биоинформатик (ETL/ELT-пайплайны, анализ данных, моделирование, преподавание)**
 
-Зона ответственности:
-
+**Зона ответственности:**
 - Моделирование (дифференциальные уравнения, ABM) и анализ биологических данных с использованием Python, Java, R и Bash.
 - Разработка, оптимизация и поддержка аналитических пайплайнов для исследований и учебных задач (Python, Linux, Pandas, seaborn, R, scikit-learn, multiprocessing).
 - Преподавание основ Python и анализа данных студентам.
 - Интеграция CLI-утилит (C/C++/Fortran/R) в существующие пайплайны.
 
-Ключевые достижения:  
+**Ключевые достижения:**
 ✔ Смоделировал изменения в человеческом геноме при расселении людей по островам тихого океана от 50 до 20 тысяч лет назад (Massey University, New Zealand).  
 ✔ Обучил более 60 студентов основам Python, сформировав фундаментальные навыки у второкурсников Школы предпринимательства и управления бизнесом Американского университета Центральной Азии (г. Бишкек, Кыргызстан).  
 ✔ Автоматизировал обработку сложных данных с помощью CLI утилит и скриптов на bash, Python и R, снизив трудозатраты нескольких исследовательских команд в области Биоинформатики (Новая-Зеландия, 2 лаборатории в РФ).  
 ✔ Создал модель биореактора по переработке дихлорметана при помощи дифференциальных уравнений (Институт системной биологии, Москва, РФ).  
 ✔ Участвовал в международных коллаборациях, применяя современные методы статистики и визуализации данных.  
 
-Стек: Python, Bash, R, Java, Linux, C/C++ build tools, scikit-learn, multiprocessing, FOSS
+**Стек:** Python, Bash, R, Java, Linux, C/C++ build tools, scikit-learn, multiprocessing, FOSS
 
 </details>
 
