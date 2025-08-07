@@ -4,6 +4,12 @@ title: "Aydar Aliev — Data Engineer"
 ---
 
 
+<style>
+    .btn, .project-tagline, .site-footer {
+        display: none !important;
+    }
+</style>
+
 ![ ](photo.jpg)
 
 **Инженер данных / Аналитик данных**  
