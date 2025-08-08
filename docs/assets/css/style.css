@@ -33,3 +33,7 @@ strong{ color: var(--gold-soft); }
 ul li::marker, ul li > svg{ color: var(--bullet); }
 
 a.download-link{ color: var(--link-accent); text-decoration: underline; }
+
+/* enlarged titles and location text */
+.location{ margin:4px 0; color: var(--text-main); font-size:150%; }
+strong.task-heading{ font-size:200%; }
