@@ -2,7 +2,7 @@ title: Айдар Алиев - Data Engineer
 description: |
   <div style="height:100vh;display:flex;flex-direction:column;justify-content:center;align-items:center;">
     <img src="photo.jpg" alt="Айдар Алиев" class="profile-photo" style="border-radius:8px;width:350px;margin-bottom:0;">
-    <h2 style="color:var(--gold);font-size:180%;margin:0;">контакты</h2>
+    <h2 style="color:var(--gold);font-size:144%;margin:0;text-align:left;align-self:flex-start;">Контакты</h2>
     <img src="email.png" alt="email" style="width:270px;margin-top:0;">
     <img src="qr.png" alt="Telegram QR" style="width:350px;margin-top:6px;">
   </div>
