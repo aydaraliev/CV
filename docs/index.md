@@ -19,7 +19,7 @@ title: Айдар Алиев – Data Engineer
       Airflow | PostgreSQL | Pandas | PySpark | scikit-learn | Bash | R
     </p>
 
-    <p><a href="resume.pdf" class="download-link">⬇ Скачать полное резюме</a></p>
+    <p><a href="https://github.com/aydaraliev/CV/raw/main/CV_Aliev_data_engineer.pdf" class="download-link">⬇ Скачать полное резюме</a></p>
 
     <h2>Абстракт</h2>
     <ul>
@@ -31,8 +31,8 @@ title: Айдар Алиев – Data Engineer
 
     <h2>Проекты на GitHub</h2>
     <ul>
-      <li><a href="#">Jupyter ноутбуки по ML</a></li>
-      <li><a href="#">Сложные запросы PostgreSQL</a></li>
+      <li><a href="https://github.com/aydaraliev/data_science_course_yandex">Jupyter ноутбуки по ML</a></li>
+      <li><a href="https://github.com/aydaraliev/SQL_for_development_course_yandex">Сложные запросы PostgreSQL</a></li>
     </ul>
 
     <h2>Опыт работы</h2>
