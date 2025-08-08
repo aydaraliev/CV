@@ -5,7 +5,7 @@
 **Инженер данных / Аналитик данных**  
 Python | SQL | Linux  
 Airflow | PostgreSQL | Pandas | PySpark | scikit-learn | Bash | R  
-Проживание: Москва, Россия
+Работаю из Москвы
 
 [📥 Скачать полное резюме](https://github.com/aydaraliev/CV/raw/main/CV_Aliev_data_engineer.pdf)
 
