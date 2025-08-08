@@ -7,6 +7,27 @@
   <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
 </head>
 <body>
-  {{ content }}
+  <div class="container">
+    <aside class="sidebar">
+      <img src="{{ 'photo.jpg' | relative_url }}" alt="Айдар Алиев" width="350" style="border-radius:8px;">
+      <h2>Контакты</h2>
+      <p class="location">Работаю из Москвы</p>
+      <p class="email"><a href="mailto:aidaraliev@gmail.com">aidaraliev@gmail.com</a></p>
+      <img src="{{ 'qr.png' | relative_url }}" alt="Telegram QR" width="350">
+
+      <nav class="sidebar-nav" aria-label="Навигация по резюме">
+        <ul>
+          <li><a href="#role">Профиль</a></li>
+          <li><a href="#summary">Абстракт</a></li>
+          <li><a href="#projects">Проекты</a></li>
+          <li><a href="#experience">Опыт работы</a></li>
+        </ul>
+      </nav>
+    </aside>
+
+    <main class="content">
+      {{ content }}
+    </main>
+  </div>
 </body>
 </html>

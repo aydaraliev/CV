@@ -3,39 +3,34 @@ layout: default
 title: Айдар Алиев – Data Engineer
 ---
 
-<div class="container">
-  <aside class="sidebar">
-    <img src="photo.jpg" alt="Айдар Алиев" width="350" style="border-radius:8px;">
-    <h2 style="margin:0;font-size:1.3rem;color:var(--gold-soft);">Контакты</h2>
-    <p style="margin:4px 0;">Работаю из Москвы</p>
-    <p><a href="mailto:aidaraliev@gmail.com">aidaraliev@gmail.com</a></p>
-    <img src="qr.png" alt="Telegram QR" width="350">
-  </aside>
+<section id="role" class="section section--role">
+  <h2>Инженер данных / Аналитик данных</h2>
+  <p class="skills">
+    <span>Python</span> | <span>SQL</span> | <span>Linux</span><br>
+    Airflow | PostgreSQL | Pandas | PySpark | scikit-learn | Bash | R
+  </p>
+  <p><a href="https://github.com/aydaraliev/CV/raw/main/CV_Aliev_data_engineer.pdf" class="download-link">⬇ Скачать полное резюме</a></p>
+</section>
 
-  <main class="content">
-    <h2>Инженер данных / Аналитик данных</h2>
-    <p class="skills">
-      <span>Python</span> | <span>SQL</span> | <span>Linux</span><br>
-      Airflow | PostgreSQL | Pandas | PySpark | scikit-learn | Bash | R
-    </p>
+<section id="summary" class="section section--summary">
+  <h2>Абстракт</h2>
+  <ul>
+    <li>Более 14 лет опыта работы с данными</li>
+    <li>Построение ETL на Airflow + PostgreSQL (ВТБ)</li>
+    <li>Опыт CI/CD, контейнеризации</li>
+    <li>Интерес к Data Engineering, ML Engineering, Data Analytics</li>
+  </ul>
+</section>
 
-    <p><a href="https://github.com/aydaraliev/CV/raw/main/CV_Aliev_data_engineer.pdf" class="download-link">⬇ Скачать полное резюме</a></p>
+<section id="projects" class="section section--projects">
+  <h2>Проекты на GitHub</h2>
+  <ul>
+    <li><a href="https://github.com/aydaraliev/data_science_course_yandex">Jupyter ноутбуки по ML</a></li>
+    <li><a href="https://github.com/aydaraliev/SQL_for_development_course_yandex">Сложные запросы PostgreSQL</a></li>
+  </ul>
+</section>
 
-    <h2>Абстракт</h2>
-    <ul>
-      <li>Более 14 лет опыта работы с данными</li>
-      <li>Построение ETL на Airflow + PostgreSQL (ВТБ)</li>
-      <li>Опыт CI/CD, контейнеризации</li>
-      <li>Интерес к Data Engineering, ML Engineering, Data Analytics</li>
-    </ul>
-
-    <h2>Проекты на GitHub</h2>
-    <ul>
-      <li><a href="https://github.com/aydaraliev/data_science_course_yandex">Jupyter ноутбуки по ML</a></li>
-      <li><a href="https://github.com/aydaraliev/SQL_for_development_course_yandex">Сложные запросы PostgreSQL</a></li>
-    </ul>
-
-    <h2>Опыт работы</h2>
-    <!-- …дополнительные секции… -->
-  </main>
-</div>
+<section id="experience" class="section section--experience">
+  <h2>Опыт работы</h2>
+  <!-- …дополнительные секции… -->
+</section>
