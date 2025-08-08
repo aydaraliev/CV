@@ -1,14 +1,20 @@
 :root{
-  /* accents */
-  --gold-main:#F5C44B;   /* H1 only */
-  --gold-soft:#D6A83F;   /* H2 / H3 */
-  --link-accent:#FF8C42; /* orange links & skills */
-
-  /* neutrals */
-  --text-main:#D0D0D0;
+  /* base palette switched to cyan */
+  --bg:#0d0d0d;
+  --text-main:#e8e8e8;
+  --accent:#63c3ff; /* cold cyan matching QR */
+  --accent-dim:#3b8ab8; /* darker for borders/hover */
+  /* warm accent for project fragments (tuned toward QR left‑upper corner) */
+  --warm:#ffa26e;
+  --warm-dim:#d88555;
+  --white:#FFFFFF;
   --bullet:#999;
-  --bg:#111;
   --font-body:"Inter","Segoe UI",sans-serif;
+
+  /* compatibility with previous vars (map all accents to cyan) */
+  --gold-main:var(--accent);
+  --gold-soft:var(--accent);
+  --link-accent:var(--accent);
 
   /* layout */
   --sidebar-gap:24px; /* base spacing between sidebar items */
@@ -16,30 +22,51 @@
 
 html,body{margin:0;background:var(--bg);color:var(--text-main);font-family:var(--font-body);scroll-behavior:smooth;}
 body{font-size:0.95rem;}
-a{color:var(--link-accent);text-decoration:none;} 
-a:hover{text-decoration:underline;}
-h1{color:var(--gold-main);font-size:1.4rem;margin:0 0 1rem;}
-h2{color:var(--gold-soft);margin:2rem 0 1rem;font-size:1.25rem;}
-h3{color:var(--gold-soft);margin:2rem 0 1rem;font-size:1.1rem;}
+a{color:var(--accent);text-decoration:none;} 
+a:hover{color:var(--accent-dim);text-decoration:underline;}
+h1{color:var(--accent);font-size:1.4rem;margin:0 0 1rem;}
+h2{color:var(--accent);margin:2rem 0 1rem;font-size:1.65rem;}
+h3{color:var(--accent);margin:2rem 0 1rem;font-size:1.1rem;}
+/* Company headings larger in experience section */
+.job h3{font-size:1.375rem;color:var(--text-main);}
 
-.container{display:flex;gap:48px;max-width:1200px;margin:0 auto;padding:32px;align-items:stretch;}
-.sidebar{
-  display:flex;flex-direction:column;align-items:center;justify-content:center;
-  min-width:350px;height:100vh;position:sticky;top:0;overflow-y:auto;
-  gap:var(--sidebar-gap);padding:32px 0;
-}
-/* neutralize default margins inside sidebar to rely on gap */
+.container{display:flex;gap:32px;max-width:1200px;margin:0 auto;padding:32px;align-items:flex-start;}
+
+/* Shared sidebar styles */
+.sidebar{display:flex;flex-direction:column;align-items:center;gap:var(--sidebar-gap);position:sticky;top:0;height:100vh;padding:24px 0;}
+/* Reduce spacing in left sidebar by 40% */
+.sidebar-left{gap:calc(0.6 * var(--sidebar-gap));}
+/* Name and role at top */
+.sidebar-left{text-align:center;}
+.sidebar-name{color:var(--accent);font-size:1.4rem;margin:0;}
+.sidebar-role{color:var(--accent);margin:0;font-size:1.4rem;}
 .sidebar h2,.sidebar p,.sidebar img{margin:0;}
-/* reduce spacing between location and email by 50% of base gap */
 .sidebar .location{margin-bottom:calc(-0.5 * var(--sidebar-gap));}
 
-/* sidebar navigation */
-.sidebar-nav ul{list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:8px;width:100%;}
-.sidebar-nav a{display:block;padding:6px 10px;border-radius:6px;color:var(--text-main);background:rgba(255,255,255,0.03);} 
-.sidebar-nav a:hover{background:rgba(255,255,255,0.08);}
-.sidebar-nav a:focus{outline:2px solid var(--gold-soft);}
+/* Left sidebar: keep content fitting without scroll; scale images if needed */
+.sidebar-left{min-width:280px;max-width:360px;overflow:hidden;justify-content:flex-start;}
+.sidebar-left .profile-photo,.sidebar-left .qr{
+  display:block;border-radius:8px;max-width:100%;height:auto;
+  object-fit:contain; /* preserve aspect ratio */
+  max-height:34vh; /* 20% bigger than 28vh */
+}
+/* add breathing space above and below */
+.sidebar-left .profile-photo{margin-top:8px;margin-bottom:8px;}
+.sidebar-left .qr{margin-top:8px;margin-bottom:8px;border:1px solid var(--cold-dim);border-radius:10px;}
+.sidebar-left .email-img{display:block;max-width:70%;width:70%;height:auto;opacity:0.95;margin:0 auto;}
+.sidebar-left .email-img-wrap{margin-top:-4px;margin-bottom:8px;}
+/* Location and email same size as h2 (Контакты) */
+.sidebar-left .location{font-size:1.25rem;color:var(--white);margin-top:calc(-0.2 * var(--sidebar-gap));}
 
-.content{flex:1;max-width:700px;}
+/* Right sidebar: nav buttons warm outline only (transparent fill) */
+.sidebar-right{min-width:220px;max-width:280px;overflow:auto;}
+.sidebar-right .sidebar-nav ul{list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:8px;width:100%;}
+.sidebar-right .sidebar-nav a{display:block;padding:6px 10px;border-radius:6px;color:var(--warm);background:transparent;border:1px solid var(--warm);font-weight:600;} 
+.sidebar-right .sidebar-nav a:hover{color:var(--warm-dim);border-color:var(--warm-dim);} 
+.sidebar-right .sidebar-nav a:focus{outline:2px solid var(--warm-dim);} 
+
+/* Content */
+.content{flex:1;min-width:0;max-width:700px;}
 .section{padding-bottom:24px;border-bottom:1px solid rgba(255,255,255,0.06);} 
 .section:last-of-type{border-bottom:0;}
 .section h2{margin-top:0;}
@@ -49,8 +76,48 @@ h3{color:var(--gold-soft);margin:2rem 0 1rem;font-size:1.1rem;}
 
 ul{list-style:disc;margin-left:20px;}
 ul li::marker{color:var(--bullet);} 
-.skills span{color:var(--link-accent);font-weight:600;}
+.skills span{color:var(--accent);font-weight:600;}
 
-/* download link as button */
-.download-link{display:inline-block;padding:8px 12px;border:1px solid var(--link-accent);border-radius:6px;}
-.download-link:hover{background:rgba(255,140,66,0.12);} 
+/* download link as button (warm outline only) */
+.download-link{display:inline-block;padding:8px 12px;border:1px solid var(--warm);border-radius:6px;color:var(--warm);background:transparent;font-weight:600;}
+.download-link:hover{color:var(--warm-dim);border-color:var(--warm-dim);} 
+
+/* Project links: emphasize only key fragment with warm color */
+a.proj{color:var(--text-main);text-decoration:none;}
+a.proj:hover{text-decoration:underline;}
+a.proj-frag{color:var(--warm);text-decoration:underline;font-weight:700;}
+a.proj-frag:hover{color:var(--warm-dim);}
+
+/* Skills header lines: bigger by 20% and blue (accent) */
+.skills{text-align:center;line-height:1.6;font-size:1.2em;color:var(--accent);} 
+.skills .skill{color:var(--accent);font-weight:600;}
+.skills .separator{color:var(--accent);} /* pipes also blue */
+
+/* Accent highlighting for key terms */
+.highlight{color:var(--accent);font-weight:600;}
+
+/* Job titles styling: plain white and 20% smaller than headers (~1.1rem) */
+.job-title{color:var(--text-main);font-weight:600;font-size:1.1rem;}
+
+/* Collapsible sections */
+.collapsible{cursor:pointer;background:rgba(255,255,255,0.05);padding:8px 12px;border-radius:6px;margin:16px 0 8px;display:flex;align-items:center;justify-content:space-between;}
+.collapsible:hover{background:rgba(255,255,255,0.08);}
+.collapsible::after{content:'▼';font-size:0.8rem;transition:transform 0.3s;}
+.collapsible.collapsed::after{transform:rotate(-90deg);}
+.collapsible-content{overflow:hidden;transition:max-height 0.3s ease-out;}
+.collapsible-content.collapsed{max-height:0;}
+.collapsible-content.expanded{max-height:1000px;}
+
+/* Section collapsibility (details/summary) */
+details.fold{margin:1rem 0;}
+details.fold > summary{color:var(--white);font-size:1.375rem;cursor:pointer;list-style:none;}
+details.fold > summary::-webkit-details-marker{display:none;}
+details.fold > summary::marker{content:'';}
+details.fold > summary::after{content:'▼';font-size:0.8rem;margin-left:8px;display:inline-block;color:var(--warm);transform:rotate(-90deg);transition:transform 0.2s ease, color 0.2s ease;}
+details.fold[open] > summary::after{transform:rotate(0);color:var(--warm-dim);} 
+/* Collapsible job sub-section: white label, orange triangle on the LEFT */
+details.collapsible-details > summary{color:var(--text-main);cursor:pointer;position:relative;padding-left:18px;}
+details.collapsible-details > summary::-webkit-details-marker{display:none;}
+details.collapsible-details > summary::marker{content:'';}
+details.collapsible-details > summary::before{content:'\25BA'; /* ► */ color:var(--warm); position:absolute; left:0; font-size:0.9rem; transform:rotate(0deg); transition:transform 0.2s ease, color 0.2s ease;}
+details.collapsible-details[open] > summary::before{transform:rotate(90deg); color:var(--warm-dim);}
