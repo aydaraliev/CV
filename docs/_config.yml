@@ -1,10 +1,4 @@
-title: Айдар Алиев - Data Engineer
-description: |
-  <div style="display:flex;flex-direction:column;align-items:flex-start;">
-    <img src="photo.jpg" alt="Айдар Алиев" class="profile-photo" style="border-radius:8px;width:350px;margin-bottom:0;">
-    <h2 style="color:var(--gold-soft);font-size:180%;margin:0;">контакты</h2>
-    <p class="location">Работаю из Москвы</p>
-    <img src="email.png" alt="email" style="width:270px;margin-top:0;">
-    <img src="qr.png" alt="Telegram QR" style="width:350px;margin-top:6px;">
-  </div>
-theme: jekyll-theme-minimal
+title: Айдар Алиев – Data Engineer
+baseurl: "/CV"
+markdown: kramdown
+theme: null

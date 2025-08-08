@@ -1,39 +1,25 @@
 :root{
   /* accents */
-  --gold-main:  #F5C44B;  /* use ONLY for H1 */
-  --gold-soft:  #D6A83F;  /* softer gold for section headers (H2 / H3) */
-  --link-accent:#FF8C42;  /* orange highlight for links / skills */
+  --gold-main:#F5C44B;   /* H1 only */
+  --gold-soft:#D6A83F;   /* H2 / H3 */
+  --link-accent:#FF8C42; /* orange links & skills */
 
   /* neutrals */
-  --text-main:  #D0D0D0;  /* regular paragraph text */
-  --bullet:     #999999;  /* list markers / small icons */
+  --text-main:#D0D0D0;
+  --bullet:#999;
+  --bg:#111;
+  --font-body:"Inter","Segoe UI",sans-serif;
 }
 
-/* hide auto-generated sidebar footer & buttons */
-.btn, .site-footer, .project-tagline{ display:none!important; }
+html,body{margin:0;background:var(--bg);color:var(--text-main);font-family:var(--font-body);}
+a{color:var(--link-accent);}
+h1{color:var(--gold-main);font-size:2.4rem;margin:0 0 1rem;}
+h2,h3{color:var(--gold-soft);margin:2rem 0 1rem;font-size:1.3rem;}
 
-/* hide ALL sidebar footer elements */
-header p.view, header small, footer, .view, small{display:none!important;}
-
-a:hover, summary:hover{ text-decoration:underline; }
-
-/* base styles */
-body{ color: var(--text-main); }
-
-h1, .cv-name{ color: var(--gold-main); }
-h2, h3, .section-title{ color: var(--gold-soft); font-weight:700; }
-summary{ color: var(--gold-soft); font-weight:700; font-size:1.5em; cursor:pointer; }
-summary.work-summary{ font-size:0.525em; }
-strong{ color: var(--gold-soft); }
-
-.role-title{ font-size:120%; }
-.skills-line{ text-align:center; }
-.skills-line span{ color: var(--link-accent); font-weight:600; }
-
-ul li::marker, ul li > svg{ color: var(--bullet); }
-
-a.download-link{ color: var(--link-accent); text-decoration: underline; }
-
-/* enlarged titles and location text */
-.location{ margin:4px 0; color: var(--text-main); font-size:150%; }
-strong.task-heading{ font-size:200%; }
+.container{display:flex;gap:48px;max-width:1200px;margin:0 auto;padding:32px;}
+.sidebar{display:flex;flex-direction:column;align-items:center;min-width:350px;min-height:100vh;}
+.sidebar>*{margin-bottom:24px;}
+.content{flex:1;max-width:700px;}
+ul{list-style:disc;margin-left:20px;}
+ul li::marker{color:var(--bullet);}
+.skills span{color:var(--link-accent);font-weight:600;}
