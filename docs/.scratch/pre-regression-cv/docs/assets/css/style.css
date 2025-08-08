@@ -1,0 +1,25 @@
+:root{
+  /* accents */
+  --gold-main:#F5C44B;   /* H1 only */
+  --gold-soft:#D6A83F;   /* H2 / H3 */
+  --link-accent:#FF8C42; /* orange links & skills */
+
+  /* neutrals */
+  --text-main:#D0D0D0;
+  --bullet:#999;
+  --bg:#111;
+  --font-body:"Inter","Segoe UI",sans-serif;
+}
+
+html,body{margin:0;background:var(--bg);color:var(--text-main);font-family:var(--font-body);}
+a{color:var(--link-accent);}
+h1{color:var(--gold-main);font-size:2.4rem;margin:0 0 1rem;}
+h2,h3{color:var(--gold-soft);margin:2rem 0 1rem;font-size:1.3rem;}
+
+.container{display:flex;gap:48px;max-width:1200px;margin:0 auto;padding:32px;}
+.sidebar{display:flex;flex-direction:column;align-items:center;min-width:350px;min-height:100vh;}
+.sidebar>*{margin-bottom:24px;}
+.content{flex:1;max-width:700px;}
+ul{list-style:disc;margin-left:20px;}
+ul li::marker{color:var(--bullet);}
+.skills span{color:var(--link-accent);font-weight:600;}
