@@ -9,17 +9,46 @@
   --bullet:#999;
   --bg:#111;
   --font-body:"Inter","Segoe UI",sans-serif;
+
+  /* layout */
+  --sidebar-gap:24px; /* base spacing between sidebar items */
 }
 
-html,body{margin:0;background:var(--bg);color:var(--text-main);font-family:var(--font-body);}
-a{color:var(--link-accent);}
+html,body{margin:0;background:var(--bg);color:var(--text-main);font-family:var(--font-body);scroll-behavior:smooth;}
+a{color:var(--link-accent);text-decoration:none;} 
+a:hover{text-decoration:underline;}
 h1{color:var(--gold-main);font-size:2.4rem;margin:0 0 1rem;}
 h2,h3{color:var(--gold-soft);margin:2rem 0 1rem;font-size:1.3rem;}
 
-.container{display:flex;gap:48px;max-width:1200px;margin:0 auto;padding:32px;}
-.sidebar{display:flex;flex-direction:column;align-items:center;min-width:350px;min-height:100vh;}
-.sidebar>*{margin-bottom:24px;}
+.container{display:flex;gap:48px;max-width:1200px;margin:0 auto;padding:32px;align-items:stretch;}
+.sidebar{
+  display:flex;flex-direction:column;align-items:center;justify-content:center;
+  min-width:350px;height:100vh;position:sticky;top:0;overflow-y:auto;
+  gap:var(--sidebar-gap);padding:32px 0;
+}
+/* neutralize default margins inside sidebar to rely on gap */
+.sidebar h2,.sidebar p,.sidebar img{margin:0;}
+/* reduce spacing between location and email by 50% of base gap */
+.sidebar .location{margin-bottom:calc(-0.5 * var(--sidebar-gap));}
+
+/* sidebar navigation */
+.sidebar-nav ul{list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:8px;width:100%;}
+.sidebar-nav a{display:block;padding:6px 10px;border-radius:6px;color:var(--text-main);background:rgba(255,255,255,0.03);} 
+.sidebar-nav a:hover{background:rgba(255,255,255,0.08);}
+.sidebar-nav a:focus{outline:2px solid var(--gold-soft);}
+
 .content{flex:1;max-width:700px;}
+.section{padding-bottom:24px;border-bottom:1px solid rgba(255,255,255,0.06);} 
+.section:last-of-type{border-bottom:0;}
+.section h2{margin-top:0;}
+.job{margin-bottom:28px;}
+.meta{color:#bbb;}
+.stack{margin-top:8px;}
+
 ul{list-style:disc;margin-left:20px;}
-ul li::marker{color:var(--bullet);}
+ul li::marker{color:var(--bullet);} 
 .skills span{color:var(--link-accent);font-weight:600;}
+
+/* download link as button */
+.download-link{display:inline-block;padding:8px 12px;border:1px solid var(--link-accent);border-radius:6px;}
+.download-link:hover{background:rgba(255,140,66,0.12);} 
