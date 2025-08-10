@@ -1,0 +1,38 @@
+nohup: ignoring input
+Configuration file: /home/turbotux/PycharmProjects/CV/docs/_config.yml
+            Source: /home/turbotux/PycharmProjects/CV/docs
+       Destination: /home/turbotux/PycharmProjects/CV/docs/_site
+ Incremental build: disabled. Enable with --incremental
+      Generating... 
+                    done in 0.038 seconds.
+ Auto-regeneration: enabled for '/home/turbotux/PycharmProjects/CV/docs'
+LiveReload address: http://127.0.0.1:35729
+[31m                    ------------------------------------------------[0m
+[31m      Jekyll 4.4.1   Please append `--trace` to the `serve` command [0m
+[31m                     for any additional information or backtrace. [0m
+[31m                    ------------------------------------------------[0m
+/usr/lib/ruby/3.2.0/socket.rb:205:in `bind': Address already in use - bind(2) for 127.0.0.1:4000 (Errno::EADDRINUSE)
+	from /usr/lib/ruby/3.2.0/socket.rb:205:in `listen'
+	from /usr/lib/ruby/3.2.0/socket.rb:768:in `block in tcp_server_sockets'
+	from /usr/lib/ruby/3.2.0/socket.rb:231:in `each'
+	from /usr/lib/ruby/3.2.0/socket.rb:231:in `foreach'
+	from /usr/lib/ruby/3.2.0/socket.rb:766:in `tcp_server_sockets'
+	from /home/turbotux/PycharmProjects/CV/docs/vendor/bundle/ruby/3.2.0/gems/webrick-1.9.1/lib/webrick/utils.rb:60:in `create_listeners'
+	from /home/turbotux/PycharmProjects/CV/docs/vendor/bundle/ruby/3.2.0/gems/webrick-1.9.1/lib/webrick/server.rb:130:in `listen'
+	from /home/turbotux/PycharmProjects/CV/docs/vendor/bundle/ruby/3.2.0/gems/webrick-1.9.1/lib/webrick/server.rb:111:in `initialize'
+	from /home/turbotux/PycharmProjects/CV/docs/vendor/bundle/ruby/3.2.0/gems/webrick-1.9.1/lib/webrick/httpserver.rb:47:in `initialize'
+	from /home/turbotux/PycharmProjects/CV/docs/vendor/bundle/ruby/3.2.0/gems/jekyll-4.4.1/lib/jekyll/commands/serve.rb:216:in `new'
+	from /home/turbotux/PycharmProjects/CV/docs/vendor/bundle/ruby/3.2.0/gems/jekyll-4.4.1/lib/jekyll/commands/serve.rb:216:in `start_up_webrick'
+	from /home/turbotux/PycharmProjects/CV/docs/vendor/bundle/ruby/3.2.0/gems/jekyll-4.4.1/lib/jekyll/commands/serve.rb:102:in `process'
+	from /home/turbotux/PycharmProjects/CV/docs/vendor/bundle/ruby/3.2.0/gems/jekyll-4.4.1/lib/jekyll/command.rb:91:in `block in process_with_graceful_fail'
+	from /home/turbotux/PycharmProjects/CV/docs/vendor/bundle/ruby/3.2.0/gems/jekyll-4.4.1/lib/jekyll/command.rb:91:in `each'
+	from /home/turbotux/PycharmProjects/CV/docs/vendor/bundle/ruby/3.2.0/gems/jekyll-4.4.1/lib/jekyll/command.rb:91:in `process_with_graceful_fail'
+	from /home/turbotux/PycharmProjects/CV/docs/vendor/bundle/ruby/3.2.0/gems/jekyll-4.4.1/lib/jekyll/commands/serve.rb:85:in `block (2 levels) in init_with_program'
+	from /home/turbotux/PycharmProjects/CV/docs/vendor/bundle/ruby/3.2.0/gems/mercenary-0.4.0/lib/mercenary/command.rb:221:in `block in execute'
+	from /home/turbotux/PycharmProjects/CV/docs/vendor/bundle/ruby/3.2.0/gems/mercenary-0.4.0/lib/mercenary/command.rb:221:in `each'
+	from /home/turbotux/PycharmProjects/CV/docs/vendor/bundle/ruby/3.2.0/gems/mercenary-0.4.0/lib/mercenary/command.rb:221:in `execute'
+	from /home/turbotux/PycharmProjects/CV/docs/vendor/bundle/ruby/3.2.0/gems/mercenary-0.4.0/lib/mercenary/program.rb:44:in `go'
+	from /home/turbotux/PycharmProjects/CV/docs/vendor/bundle/ruby/3.2.0/gems/mercenary-0.4.0/lib/mercenary.rb:21:in `program'
+	from /home/turbotux/PycharmProjects/CV/docs/vendor/bundle/ruby/3.2.0/gems/jekyll-4.4.1/exe/jekyll:15:in `<top (required)>'
+	from /home/turbotux/PycharmProjects/CV/docs/vendor/bundle/ruby/3.2.0/bin/jekyll:25:in `load'
+	from /home/turbotux/PycharmProjects/CV/docs/vendor/bundle/ruby/3.2.0/bin/jekyll:25:in `<main>'

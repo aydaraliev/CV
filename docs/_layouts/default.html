@@ -5,8 +5,47 @@
   <title>{{ page.title }}</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+
+  <!-- Favicons -->
+  <link rel="icon" type="image/png" sizes="512x512" href="{{ '/assets/images/favicon-512.png' | relative_url }}">
+  <link rel="icon" type="image/png" sizes="128x128" href="{{ '/assets/images/favicon-128.png' | relative_url }}">
+  <link rel="icon" type="image/png" sizes="32x32" href="{{ '/assets/images/favicon-32.png' | relative_url }}">
+  <link rel="icon" type="image/png" sizes="16x16" href="{{ '/assets/images/favicon-16.png' | relative_url }}">
 </head>
 <body>
-  {{ content }}
+  <div class="container">
+    <!-- Left sidebar: photo + contacts + QR only -->
+    <aside class="sidebar sidebar-left">
+      <h1 class="sidebar-name">Айдар Алиев</h1>
+      <h2 class="sidebar-role">Инженер данных / Аналитик данных</h2>
+      <img class="profile-photo" src="{{ 'photo.jpg' | relative_url }}" alt="Айдар Алиев">
+      <p><a href="https://github.com/aydaraliev/CV/raw/main/CV_Aliev_data_engineer.pdf" class="download-link">⬇ Скачать резюме (.pdf)</a></p>
+      <h2>Контакты</h2>
+      <p class="location">Работаю из Москвы</p>
+      <img class="qr" src="{{ 'qr.png' | relative_url }}" alt="Telegram QR">
+      <p class="email-img-wrap"><img class="email-img" src="{{ 'email.png' | relative_url }}" alt="aidaraliev(at)gmail.com"></p>
+    </aside>
+
+    <!-- Main content -->
+    <main class="content">
+      {{ content }}
+    </main>
+
+    <!-- Right sidebar: navigation only -->
+    <aside class="sidebar sidebar-right">
+      <nav class="sidebar-nav" aria-label="Навигация по резюме">
+        <ul>
+          <li><a href="#role">Профиль</a></li>
+          <li><a href="#summary">Абстракт</a></li>
+          <li><a href="#projects">Проекты</a></li>
+          <li><a href="#experience">Опыт работы</a></li>
+          <li><a href="#education">Образование</a></li>
+          <li><a href="#certificates">Сертификаты</a></li>
+          <li><a href="#skills">Навыки</a></li>
+          <li><a href="#about">О себе</a></li>
+        </ul>
+      </nav>
+    </aside>
+  </div>
 </body>
 </html>

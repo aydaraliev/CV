@@ -1,0 +1,14 @@
+source "https://rubygems.org"
+
+# Core site generator
+gem "jekyll", "~> 4.3"
+
+# Ruby 3.x no longer ships with WEBrick by default; needed for `jekyll serve`
+group :development do
+  gem "webrick", "~> 1.8"
+end
+
+# Test tools
+group :test do
+  gem "html-proofer", "~> 5.0"
+end

@@ -1,0 +1,5 @@
+# Ignore generated and vendor content
+_site/
+node_modules/
+vendor/
+
