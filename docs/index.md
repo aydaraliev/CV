@@ -52,7 +52,7 @@ title: Айдар Алиев – Data Engineer
     <h3>Иннотех, Группа компаний</h3>
     <p class="meta"><em>Москва • Ноябрь 2022 — настоящее время</em><br><em>Ведущий российский интегратор IT-решений для корпоративного сектора</em></p>
     <p class="job-title">Разработчик ETL-процессов (Data Engineer)</p>
-    <p class="stack"><strong>Стек:</strong> <span class="highlight">ETL/ELT</span>, <span class="highlight">Python</span>, <span class="highlight">SQL<span>, <span="highlight">Airflow</span>, <span="highlight">PostgreSQL</span>, <span class="highlight">PL/pgSQL</span>, Spark, git, Confluence, Maven</p>
+    <p class="stack"><strong>Стек:</strong> <span class="highlight">ETL/ELT</span>, <span class="highlight">Python</span>, <span class="highlight">SQL</span>, <span class="highlight">Airflow</span>, <span class="highlight">PostgreSQL</span>, <span class="highlight">PL/pgSQL</span>, Spark, git, Confluence, Maven</p>
 
     <details class="collapsible-details">
       <summary>Зона ответственности и примеры решённых задач</summary>
