@@ -196,3 +196,4 @@ title: Айдар Алиев – Data Engineer
     <li>Открыт к предложениям Data Engineer, ML Engineer и Data Analyst.</li>
   </ul>
 </details>
+
