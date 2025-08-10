@@ -53,7 +53,15 @@ h3{color:var(--accent);margin:2rem 0 1rem;font-size:1.1rem;}
 /* add breathing space above and below */
 .sidebar-left .profile-photo{margin-top:8px;margin-bottom:8px;}
 .sidebar-left .qr{margin-top:8px;margin-bottom:8px;border:1px solid var(--cold-dim);border-radius:10px;}
-.sidebar-left .email-img{display:block;max-width:70%;height:auto;opacity:0.95;}
+.sidebar-left .email-img {
+  display: block;
+  max-width: 70%;
+  max-height: 80px; /* или подбери под дизайн */
+  height: auto;
+  opacity: 0.95;
+  margin-left: auto;
+  margin-right: auto;
+}
 .sidebar-left .email-img-wrap{margin-top:-4px;margin-bottom:8px;display:flex;justify-content:center;}
 /* Location and email same size as h2 (Контакты) */
 .sidebar-left .location{font-size:1.25rem;color:var(--white);margin-top:calc(-0.2 * var(--sidebar-gap));}
@@ -121,3 +129,23 @@ details.collapsible-details > summary::-webkit-details-marker{display:none;}
 details.collapsible-details > summary::marker{content:'';}
 details.collapsible-details > summary::before{content:'\25BA'; /* ► */ color:var(--warm); position:absolute; left:0; font-size:0.9rem; transform:rotate(0deg); transition:transform 0.2s ease, color 0.2s ease;}
 details.collapsible-details[open] > summary::before{transform:rotate(90deg); color:var(--warm-dim);}
+/* E-mail image: фиксируем размер и центрируем */
+.email-img-wrap{
+  display:flex;              /* проще всего центрировать */
+  justify-content:center;
+  margin: 8px 0 0;
+}
+
+.email-img{
+  display:block;
+  max-width: 220px;          /* задай свой максимум (например 180–240px) */
+  width: auto;               /* не растягивать на 100% ширины сайдбара */
+  height:auto;               /* сохранять пропорции */
+  object-fit: contain;
+}
+
+/* Если где-то есть .sidebar img { width:100%; } — перебиваем точечно */
+.sidebar-left img.email-img{
+  width:auto !important;
+  max-width:220px !important;
+}

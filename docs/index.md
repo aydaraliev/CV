@@ -23,8 +23,8 @@ title: Айдар Алиев – Data Engineer
 <details id="projects" class="fold" open>
   <summary>Проекты на GitHub</summary>
   <ul>
-    <li><a class="proj-frag" href="https://github.com/aydaraliev/data_science_course_yandex">Jupyter (<span class="highlight">Python</span>) ноутбуки🔗</a> с проектами по анализу данных, машинному и глубокому обучению</li>
-    <li><a class="proj-frag" href="https://github.com/aydaraliev/SQL_for_development_course_yandex">Проекты на <span class="highlight">PostgreSQL</span>🔗</a> (сложные запросы, пользовательские типы данных, PL/pgSQL, плагины, проектирование БД, триггеры, оптимизация)</li>
+    <li><a class="proj-frag" href="https://github.com/aydaraliev/data_science_course_yandex">Jupyter (🐍Python) ноутбуки🔗</a> с проектами по анализу данных, машинному и глубокому обучению</li>
+    <li><a class="proj-frag" href="https://github.com/aydaraliev/SQL_for_development_course_yandex">Проекты на 🐘PostgreSQL🔗</a> (сложные запросы, пользовательские типы данных, PL/pgSQL, плагины, проектирование БД, триггеры, оптимизация)</li>
   </ul>
   <hr />
 </details>
