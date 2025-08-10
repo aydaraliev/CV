@@ -1,4 +1,5 @@
 title: Айдар Алиев – Data Engineer
-baseurl: "/CV"
+url: "https://молоткастый.инженер-данных.рф"   # твой домен (можешь в punycode)
+baseurl: ""                                     # пусто для кастомного домена
 markdown: kramdown
 theme: null
