@@ -31,6 +31,7 @@ h3{color:var(--accent);margin:2rem 0 1rem;font-size:1.1rem;}
 .job h3{font-size:1.375rem;color:var(--text-main);}
 
 .container{display:flex;gap:32px;max-width:1200px;margin:0 auto;padding:32px;align-items:flex-start;}
+.main-wrapper{display:flex;gap:32px;flex:1;align-items:flex-start;}
 
 /* Shared sidebar styles */
 .sidebar{display:flex;flex-direction:column;align-items:center;gap:var(--sidebar-gap);position:sticky;top:0;height:100vh;padding:24px 0;}
@@ -53,16 +54,6 @@ h3{color:var(--accent);margin:2rem 0 1rem;font-size:1.1rem;}
 /* add breathing space above and below */
 .sidebar-left .profile-photo{margin-top:8px;margin-bottom:8px;}
 .sidebar-left .qr{margin-top:8px;margin-bottom:8px;border:1px solid var(--cold-dim);border-radius:10px;}
-.sidebar-left .email-img {
-  display: block;
-  max-width: 70%;
-  max-height: 80px; /* или подбери под дизайн */
-  height: auto;
-  opacity: 0.95;
-  margin-left: auto;
-  margin-right: auto;
-}
-.sidebar-left .email-img-wrap{margin-top:-4px;margin-bottom:8px;display:flex;justify-content:center;}
 /* Location and email same size as h2 (Контакты) */
 .sidebar-left .location{font-size:1.25rem;color:var(--white);margin-top:calc(-0.2 * var(--sidebar-gap));}
 
@@ -131,20 +122,22 @@ details.collapsible-details > summary::before{content:'\25BA'; /* ► */ color:v
 details.collapsible-details[open] > summary::before{transform:rotate(90deg); color:var(--warm-dim);}
 /* E-mail image: фиксируем размер и центрируем */
 .email-img-wrap{
-  display:flex;              /* проще всего центрировать */
+  display:flex;              /* центрируем */
   justify-content:center;
-  margin: 8px 0 0;
+  width:100%;                /* растягиваем по ширине */
+  margin:8px 0;
 }
 
 .email-img{
   display:block;
-  max-width: 220px;          /* задай свой максимум (например 180–240px) */
-  width: auto;               /* не растягивать на 100% ширины сайдбара */
-  height:auto;               /* сохранять пропорции */
-  object-fit: contain;
+  margin:0 auto;             /* центрируем alt-текст при отсутствии изображения */
+  max-width:220px;
+  width:auto;
+  height:auto;
+  object-fit:contain;
 }
 
-/* Если где-то есть .sidebar img { width:100%; } — перебиваем точечно */
+/* Перебиваем общие правила сайдбара для почтового изображения */
 .sidebar-left img.email-img{
   width:auto !important;
   max-width:220px !important;
@@ -154,7 +147,8 @@ details.collapsible-details[open] > summary::before{transform:rotate(90deg); col
 @media (max-width: 768px){
   .container{flex-direction:column;gap:24px;padding:16px;}
   .sidebar{position:static;height:auto;width:100%;max-width:none;}
-  .sidebar-left,.sidebar-right{min-width:0;max-width:none;}
-  .content{max-width:none;}
-  .sidebar-right{order:3;}
+  .sidebar-left{min-width:0;max-width:none;}
+  .main-wrapper{display:flex;flex-direction:column;gap:24px;width:100%;}
+  .sidebar-right{order:1;min-width:0;max-width:none;width:100%;overflow:visible;}
+  .content{order:2;max-width:none;}
 }
