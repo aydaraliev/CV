@@ -125,11 +125,13 @@ details.collapsible-details[open] > summary::before{transform:rotate(90deg); col
 .email-img-wrap{
   display:flex;              /* центрируем */
   justify-content:center;
+  width:100%;                /* растягиваем по ширине */
   margin:8px 0;
 }
 
 .email-img{
   display:block;
+  margin:0 auto;             /* центрируем alt-текст при отсутствии изображения */
   max-width:220px;
   width:auto;
   height:auto;
