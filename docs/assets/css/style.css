@@ -18,6 +18,7 @@
 
   /* layout */
   --sidebar-gap:24px; /* base spacing between sidebar items */
+  --mobile-nav-width:150px; /* reserved space for fixed right nav on small screens */
 }
 
 html,body{margin:0;background:var(--bg);color:var(--text-main);font-family:var(--font-body);scroll-behavior:smooth;}
@@ -54,16 +55,6 @@ h3{color:var(--accent);margin:2rem 0 1rem;font-size:1.1rem;}
 /* add breathing space above and below */
 .sidebar-left .profile-photo{margin-top:8px;margin-bottom:8px;}
 .sidebar-left .qr{margin-top:8px;margin-bottom:8px;border:1px solid var(--cold-dim);border-radius:10px;}
-.sidebar-left .email-img {
-  display: block;
-  max-width: 70%;
-  max-height: 80px; /* или подбери под дизайн */
-  height: auto;
-  opacity: 0.95;
-  margin-left: auto;
-  margin-right: auto;
-}
-.sidebar-left .email-img-wrap{margin-top:-4px;margin-bottom:8px;display:flex;justify-content:center;}
 /* Location and email same size as h2 (Контакты) */
 .sidebar-left .location{font-size:1.25rem;color:var(--white);margin-top:calc(-0.2 * var(--sidebar-gap));}
 
@@ -132,20 +123,20 @@ details.collapsible-details > summary::before{content:'\25BA'; /* ► */ color:v
 details.collapsible-details[open] > summary::before{transform:rotate(90deg); color:var(--warm-dim);}
 /* E-mail image: фиксируем размер и центрируем */
 .email-img-wrap{
-  display:flex;              /* проще всего центрировать */
+  display:flex;              /* центрируем */
   justify-content:center;
-  margin: 8px 0 0;
+  margin:8px 0;
 }
 
 .email-img{
   display:block;
-  max-width: 220px;          /* задай свой максимум (например 180–240px) */
-  width: auto;               /* не растягивать на 100% ширины сайдбара */
-  height:auto;               /* сохранять пропорции */
-  object-fit: contain;
+  max-width:220px;
+  width:auto;
+  height:auto;
+  object-fit:contain;
 }
 
-/* Если где-то есть .sidebar img { width:100%; } — перебиваем точечно */
+/* Перебиваем общие правила сайдбара для почтового изображения */
 .sidebar-left img.email-img{
   width:auto !important;
   max-width:220px !important;
@@ -156,7 +147,16 @@ details.collapsible-details[open] > summary::before{transform:rotate(90deg); col
   .container{flex-direction:column;gap:24px;padding:16px;}
   .sidebar{position:static;height:auto;width:100%;max-width:none;}
   .sidebar-left{min-width:0;max-width:none;}
-  .main-wrapper{display:flex;gap:16px;width:100%;}
-  .content{max-width:none;flex:1;}
-  .sidebar-right{min-width:120px;max-width:180px;width:auto;}
+  .main-wrapper{display:block;width:100%;}
+  .content{max-width:none;margin-right:var(--mobile-nav-width);}
+  .sidebar-right{
+    position:fixed;
+    top:0;
+    right:0;
+    height:100vh;
+    width:var(--mobile-nav-width);
+    overflow:auto;
+    background:var(--bg);
+    z-index:1000;
+  }
 }
