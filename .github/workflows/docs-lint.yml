@@ -1,0 +1,56 @@
+name: Lint Docs
+
+on:
+  pull_request:
+  push:
+    branches: [ main, master ]
+
+jobs:
+  markdownlint:
+    name: Markdownlint
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: docs
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+          cache-dependency-path: 'docs/package.json'
+
+      - name: Install markdownlint
+        run: npm ci || npm install
+
+      - name: Run markdownlint
+        run: npx markdownlint "**/*.md" --ignore node_modules --ignore vendor --ignore _site --config .markdownlint.yaml
+
+  htmlproofer:
+    name: HTMLProofer
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: docs
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: '3.2'
+          bundler-cache: true
+
+      - name: Install gems
+        run: bundle install --jobs 4 --retry 3
+
+      - name: Build site
+        run: bundle exec jekyll build
+
+      - name: Run html-proofer
+        run: bundle exec htmlproofer ./_site --check-html --assume-extension --disable-external --allow-hash-href
+
