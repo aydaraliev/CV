@@ -31,6 +31,7 @@ h3{color:var(--accent);margin:2rem 0 1rem;font-size:1.1rem;}
 .job h3{font-size:1.375rem;color:var(--text-main);}
 
 .container{display:flex;gap:32px;max-width:1200px;margin:0 auto;padding:32px;align-items:flex-start;}
+.main-wrapper{display:flex;gap:32px;flex:1;align-items:flex-start;}
 
 /* Shared sidebar styles */
 .sidebar{display:flex;flex-direction:column;align-items:center;gap:var(--sidebar-gap);position:sticky;top:0;height:100vh;padding:24px 0;}
@@ -154,7 +155,8 @@ details.collapsible-details[open] > summary::before{transform:rotate(90deg); col
 @media (max-width: 768px){
   .container{flex-direction:column;gap:24px;padding:16px;}
   .sidebar{position:static;height:auto;width:100%;max-width:none;}
-  .sidebar-left,.sidebar-right{min-width:0;max-width:none;}
-  .content{max-width:none;}
-  .sidebar-right{order:3;}
+  .sidebar-left{min-width:0;max-width:none;}
+  .main-wrapper{display:flex;gap:16px;width:100%;}
+  .content{max-width:none;flex:1;}
+  .sidebar-right{min-width:120px;max-width:180px;width:auto;}
 }
