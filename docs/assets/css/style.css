@@ -147,16 +147,7 @@ details.collapsible-details[open] > summary::before{transform:rotate(90deg); col
   .container{flex-direction:column;gap:24px;padding:16px;}
   .sidebar{position:static;height:auto;width:100%;max-width:none;}
   .sidebar-left{min-width:0;max-width:none;}
-  .main-wrapper{display:block;width:100%;}
-  .content{max-width:none;margin-right:var(--mobile-nav-width);}
-  .sidebar-right{
-    position:fixed;
-    top:0;
-    right:0;
-    height:100vh;
-    width:var(--mobile-nav-width);
-    overflow:auto;
-    background:var(--bg);
-    z-index:1000;
-  }
+  .main-wrapper{display:flex;flex-direction:column;gap:24px;width:100%;}
+  .sidebar-right{order:1;min-width:0;max-width:none;width:100%;overflow:visible;}
+  .content{order:2;max-width:none;}
 }
