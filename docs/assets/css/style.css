@@ -18,6 +18,7 @@
 
   /* layout */
   --sidebar-gap:24px; /* base spacing between sidebar items */
+  --mobile-nav-width:150px; /* reserved space for fixed right nav on small screens */
 }
 
 html,body{margin:0;background:var(--bg);color:var(--text-main);font-family:var(--font-body);scroll-behavior:smooth;}
