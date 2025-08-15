@@ -195,14 +195,16 @@
 
 ---
 
-## 📲 Контакты
+<details>
+<summary><h2>📲 Контакты</h2></summary>
 
 <div align="center">
 
 ### 🌐 Веб-версия резюме: [**инженер-данных.рф**](https://инженер-данных.рф)
 
-![](./qr.png)
+<img src="./qr.png" width="50%">
 
 [📥 Скачать полное резюме (PDF)](https://github.com/aydaraliev/CV/raw/main/CV_Aliev_data_engineer.pdf)
 
 </div>
+</details>
