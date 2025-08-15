@@ -149,3 +149,12 @@ details.collapsible-details[open] > summary::before{transform:rotate(90deg); col
   width:auto !important;
   max-width:220px !important;
 }
+
+/* Responsive layout adjustments for narrow viewports */
+@media (max-width: 768px){
+  .container{flex-direction:column;gap:24px;padding:16px;}
+  .sidebar{position:static;height:auto;width:100%;max-width:none;}
+  .sidebar-left,.sidebar-right{min-width:0;max-width:none;}
+  .content{max-width:none;}
+  .sidebar-right{order:3;}
+}
