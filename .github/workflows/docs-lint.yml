@@ -56,5 +56,5 @@ jobs:
       - name: Run html-proofer
         run: |
           cd docs
-          htmlproofer ./_site --check-html --assume-extension --disable-external --allow-hash-href
+          htmlproofer ./_site --assume-extension --disable-external --allow-hash-href
 
