@@ -14,7 +14,8 @@ jobs:
         working-directory: docs
     steps:
       - name: Checkout
-        uses: actions/checkout@v4
+        with:
+          submodules: false
 
       - name: Setup Node
         uses: actions/setup-node@v4
@@ -37,7 +38,8 @@ jobs:
         working-directory: docs
     steps:
       - name: Checkout
-        uses: actions/checkout@v4
+        with:
+          submodules: false
 
       - name: Setup Ruby
         uses: ruby/setup-ruby@v1
