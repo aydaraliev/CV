@@ -1,0 +1,15 @@
+# Jekyll configuration for root directory
+# This should not be used for the actual site - the site is in /docs
+# This config is only here in case GitHub tries to build Jekyll in root
+
+exclude:
+  - Pandoc-Emojis-Filter
+  - build_cv.sh
+  - preprocess_readme.py
+  - CV_Aliev_data_engineer.pdf
+  - photo_original.jpg
+  - "*.pyc"
+  - __pycache__
+  - .idea
+  - .worktrees
+  - vendor
