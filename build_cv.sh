@@ -21,7 +21,7 @@ pandoc \
     README_processed.md \
     --filter=Pandoc-Emojis-Filter/emoji_filter.js \
     -M emoji=noto-emoji \
-    --from gfm \
+    --from gfm+attributes \
     -V colorlinks \
     -V urlcolor=NavyBlue \
     -V linkcolor=NavyBlue \
