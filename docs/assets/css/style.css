@@ -117,13 +117,13 @@ details.fold{margin:1rem 0;}
 details.fold > summary{color:var(--white);font-size:1.375rem;cursor:pointer;list-style:none;}
 details.fold > summary::-webkit-details-marker{display:none;}
 details.fold > summary::marker{content:'';}
-details.fold > summary::after{content:'▼';font-size:0.8rem;margin-left:8px;display:inline-block;color:var(--accent);transform:rotate(-90deg);transition:transform 0.2s ease, color 0.2s ease;}
+details.fold > summary::after{content:'▼';font-size:0.92rem;margin-left:8px;display:inline-block;color:var(--accent);transform:rotate(-90deg);transition:transform 0.2s ease, color 0.2s ease;}
 details.fold[open] > summary::after{transform:rotate(0);color:var(--accent-dim);}
 /* Collapsible job sub-section: white label, blue triangle on the LEFT */
 details.collapsible-details > summary{color:var(--text-main);cursor:pointer;position:relative;padding-left:18px;}
 details.collapsible-details > summary::-webkit-details-marker{display:none;}
 details.collapsible-details > summary::marker{content:'';}
-details.collapsible-details > summary::before{content:'\25BA'; /* ► */ color:var(--accent); position:absolute; left:0; font-size:0.9rem; transform:rotate(0deg); transition:transform 0.2s ease, color 0.2s ease;}
+details.collapsible-details > summary::before{content:'\25BA'; /* ► */ color:var(--accent); position:absolute; left:0; font-size:1.035rem; transform:rotate(0deg); transition:transform 0.2s ease, color 0.2s ease;}
 details.collapsible-details[open] > summary::before{transform:rotate(90deg); color:var(--accent-dim);}
 /* Email link styling - 25% larger */
 .email-link{
