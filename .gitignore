@@ -20,7 +20,8 @@ docs/.jekyll-metadata
 docs/vendor/
 docs/node_modules/
 
-# Cached emoji SVG/PDFs	noto-emoji/
+# Cached emoji SVG/PDFs
+noto-emoji/
 
 # Compiled files
 *.class
