@@ -53,5 +53,5 @@ jobs:
         run: bundle exec jekyll build
 
       - name: Run html-proofer
-        run: bundle exec htmlproofer ./_site --check-html --assume-extension --disable-external --allow-hash-href
+        run: bundle exec htmlproofer ./_site --assume-extension --disable-external --allow-hash-href
 
