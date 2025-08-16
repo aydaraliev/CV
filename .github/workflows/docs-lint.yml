@@ -46,6 +46,7 @@ jobs:
           cd docs
           gem install bundler
           bundle install --jobs 4 --retry 3
+          gem install html-proofer
 
       - name: Build site
         run: |

@@ -44,7 +44,10 @@ def preprocess_readme(input_file, output_file):
     processed_content = re.sub(r'<details>\s*<summary><h2>(.*?)</h2></summary>', r'## \1\n', processed_content)
     
     # Convert HTML img tags to Markdown format for better PDF rendering
-    # This will convert <img src="./qr.png" width="50%"> to ![](./qr.png)
+    # Special handling for QR code - make it smaller (20% of page width)
+    # First, handle the QR code specifically
+    processed_content = re.sub(r'<img src="(\./qr\.png)"[^>]*>', r'![](\1){width=20%}', processed_content)
+    # Then handle any other images normally
     processed_content = re.sub(r'<img src="([^"]+)"[^>]*>', r'![](\1)', processed_content)
     
     with open(output_file, 'w', encoding='utf-8') as f:
