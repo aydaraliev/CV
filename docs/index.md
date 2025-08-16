@@ -3,6 +3,7 @@ layout: default
 title: Айдар Алиев – Data Engineer
 ---
 
+<!-- Trigger rebuild -->
 <section id="role" class="section section--role">
   <p class="skills">
     <span class="highlight">Python</span> | <span class="highlight">SQL</span> | <span class="highlight">Linux</span><br>
