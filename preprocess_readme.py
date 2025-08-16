@@ -43,6 +43,10 @@ def preprocess_readme(input_file, output_file):
     # Clean up any remaining details tags without headers (like the closed ones)
     processed_content = re.sub(r'<details>\s*<summary><h2>(.*?)</h2></summary>', r'## \1\n', processed_content)
     
+    # Convert HTML img tags to Markdown format for better PDF rendering
+    # This will convert <img src="./qr.png" width="50%"> to ![](./qr.png)
+    processed_content = re.sub(r'<img src="([^"]+)"[^>]*>', r'![](\1)', processed_content)
+    
     with open(output_file, 'w', encoding='utf-8') as f:
         f.write(processed_content)
     

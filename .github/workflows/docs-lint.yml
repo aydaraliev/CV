@@ -32,9 +32,6 @@ jobs:
   htmlproofer:
     name: HTMLProofer
     runs-on: ubuntu-latest
-    defaults:
-      run:
-        working-directory: docs
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -43,15 +40,20 @@ jobs:
         uses: ruby/setup-ruby@v1
         with:
           ruby-version: '3.2'
-          bundler-cache: true
-          working-directory: docs
 
       - name: Install gems
-        run: bundle install --jobs 4 --retry 3
+        run: |
+          cd docs
+          gem install bundler
+          bundle install --jobs 4 --retry 3
 
       - name: Build site
-        run: bundle exec jekyll build
+        run: |
+          cd docs
+          bundle exec jekyll build
 
       - name: Run html-proofer
-        run: bundle exec htmlproofer ./_site --check-html --assume-extension --disable-external --allow-hash-href
+        run: |
+          cd docs
+          bundle exec htmlproofer ./_site --check-html --assume-extension --disable-external --allow-hash-href
 
