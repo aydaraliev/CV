@@ -40,9 +40,10 @@ h3{color:var(--accent);margin:2rem 0 1rem;font-size:1.1rem;}
 .sidebar-left{gap:calc(0.6 * var(--sidebar-gap));}
 /* Name and role at top */
 .sidebar-left{text-align:center;}
-.sidebar-name{color:var(--accent);font-size:1.4rem;margin:0;}
-.sidebar-role{color:var(--accent);margin:0;font-size:1.4rem;}
+.sidebar-name{color:var(--white);font-size:1.4rem;margin:0;}
+.sidebar-role{color:var(--white);margin:0;font-size:1.4rem;}
 .sidebar h2,.sidebar p,.sidebar img{margin:0;}
+.sidebar h2{color:var(--white);}
 .sidebar .location{margin-bottom:calc(-0.5 * var(--sidebar-gap));}
 
 /* Left sidebar: keep content fitting without scroll; scale images if needed */
@@ -58,12 +59,12 @@ h3{color:var(--accent);margin:2rem 0 1rem;font-size:1.1rem;}
 /* Location and email same size as h2 (Контакты) */
 .sidebar-left .location{font-size:1.25rem;color:var(--white);margin-top:calc(-0.2 * var(--sidebar-gap));}
 
-/* Right sidebar: nav buttons warm outline only (transparent fill) */
+/* Right sidebar: nav buttons blue outline only (transparent fill) */
 .sidebar-right{min-width:308px;max-width:392px;overflow:auto;}
 .sidebar-right .sidebar-nav ul{list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:8px;width:100%;}
-.sidebar-right .sidebar-nav a{display:block;padding:8.4px 14px;border-radius:8.4px;color:var(--warm);background:transparent;border:1.4px solid var(--warm);font-weight:600;font-size:1.1rem;}
-.sidebar-right .sidebar-nav a:hover{color:var(--warm-dim);border-color:var(--warm-dim);} 
-.sidebar-right .sidebar-nav a:focus{outline:2px solid var(--warm-dim);} 
+.sidebar-right .sidebar-nav a{display:block;padding:8.4px 14px;border-radius:8.4px;color:var(--accent);background:transparent;border:1.4px solid var(--accent);font-weight:600;font-size:1.1rem;}
+.sidebar-right .sidebar-nav a:hover{color:var(--accent-dim);border-color:var(--accent-dim);} 
+.sidebar-right .sidebar-nav a:focus{outline:2px solid var(--accent-dim);}
 
 /* Content */
 .sidebar-nav a {
