@@ -38,7 +38,7 @@ title: Айдар Алиев – Data Engineer
     <p class="job-title">Разработчик ETL-процессов (Data Engineer)</p>
     <p class="stack"><strong>Стек:</strong> ETL/ELT, <span class="highlight">Python</span>, <span class="highlight">SQL</span>, <span class="highlight">Airflow</span>, <span class="highlight">PostgreSQL</span>, PL/pgSQL, Spark, git, Confluence, Maven</p>
 
-    <details class="collapsible-details">
+    <details id="job-innotech" class="collapsible-details">
       <summary>Зона ответственности и примеры решённых задач</summary>
       <h4>Зона ответственности:</h4>
       <ul>
@@ -67,7 +67,7 @@ title: Айдар Алиев – Data Engineer
     <p class="job-title">Аналитик данных / Биоинформатик</p>
     <p class="stack"><strong>Стек:</strong> <span class="highlight">Python</span>, R, bash, <span class="highlight">Linux</span>, tabix, vcftools, bcftools, plink2, multiprocessing, FOSS</p>
 
-    <details class="collapsible-details">
+    <details id="job-img-kurchatov" class="collapsible-details">
       <summary>Зона ответственности и примеры решённых задач</summary>
       <h4>Зона ответственности:</h4>
       <ul>
@@ -93,7 +93,7 @@ title: Айдар Алиев – Data Engineer
     <p class="job-title">Аналитик данных</p>
     <p class="stack"><strong>Стек:</strong> ETL/ELT, <span class="highlight">Python</span>, <span class="highlight">SQL</span>, ClickHouse, <span class="highlight">Airflow</span>, <span class="highlight">pandas</span>, openpyxl, requests, matplotlib, seaborn</p>
 
-    <details class="collapsible-details">
+    <details id="job-dzm" class="collapsible-details">
       <summary>Зона ответственности и примеры решённых задач</summary>
       <h4>Зона ответственности:</h4>
       <ul>
@@ -120,7 +120,7 @@ title: Айдар Алиев – Data Engineer
     <p class="job-title">Биоинформатик (ETL/ELT‑пайплайны, анализ данных, моделирование, преподавание)</p>
     <p class="stack"><strong>Стек:</strong> <span class="highlight">Python</span>, Bash, R, Java, <span class="highlight">Linux</span>, C/C++ build tools, scikit‑learn, multiprocessing, FOSS</p>
 
-    <details class="collapsible-details">
+    <details id="job-labs-teaching" class="collapsible-details">
       <summary>Зона ответственности и примеры решённых задач</summary>
       <h4>Зона ответственности:</h4>
       <ul>

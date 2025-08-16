@@ -42,8 +42,9 @@
 
 **Стек:** ETL/ELT, **Python**, **SQL**, **Airflow**, **PostgreSQL**, PL/pgSQL, Spark, git, Confluence, Maven
 
+[Зона ответственности и примеры решённых задач →](https://инженер-данных.рф/#job-innotech)
 <details>
-<summary><strong>[Зона ответственности и примеры решённых задач](https://инженер-данных.рф#иннотех-группа-компаний)</strong></summary>
+<summary><strong>Развернуть</strong></summary>
 
 #### Зона ответственности:
 - Автоматизация ETL-процессов для проекта ВТБ на стеке **Airflow** + **PostgreSQL**.
@@ -68,8 +69,9 @@
 
 **Стек:** **Python**, R, bash, **Linux**, tabix, vcftools, bcftools, plink2, multiprocessing, FOSS
 
+[Зона ответственности и примеры решённых задач →](https://инженер-данных.рф/#job-img-kurchatov)
 <details>
-<summary><strong>[Зона ответственности и примеры решённых задач](https://инженер-данных.рф#институт-молекулярной-генетики-ниц-курчатовский-институт)</strong></summary>
+<summary><strong>Развернуть</strong></summary>
 
 #### Зона ответственности:
 - Обработка больших массивов биомедицинских данных (50–60 млн строк) в **Linux**-среде (**pandas**, multiprocessing, bash, CLI утилиты).
@@ -93,8 +95,9 @@
 
 **Стек:** ETL/ELT, **Python**, **SQL**, ClickHouse, **Airflow**, **pandas**, openpyxl, requests, matplotlib, seaborn
 
+[Зона ответственности и примеры решённых задач →](https://инженер-данных.рф/#job-dzm)
 <details>
-<summary><strong>[Зона ответственности и примеры решённых задач](https://инженер-данных.рф#департамент-здравоохранения-города-москвы)</strong></summary>
+<summary><strong>Развернуть</strong></summary>
 
 #### Зона ответственности:
 - Автоматизация загрузки и обработки данных из ЕМИАС и S3 в DWH на ClickHouse **SQL** (**Airflow**).
@@ -118,8 +121,9 @@
 
 **Стек:** **Python**, Bash, R, Java, **Linux**, C/C++ build tools, scikit-learn, multiprocessing, FOSS
 
+[Зона ответственности и примеры решённых задач →](https://инженер-данных.рф/#job-labs-teaching)
 <details>
-<summary><strong>[Зона ответственности и примеры решённых задач](https://инженер-данных.рф#работа-в-лабораториях-преподавание)</strong></summary>
+<summary><strong>Развернуть</strong></summary>
 
 #### Зона ответственности:
 - Моделирование и анализ биологических данных с использованием **Python**, Java, R и Bash.
