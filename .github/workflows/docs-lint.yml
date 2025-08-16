@@ -44,6 +44,7 @@ jobs:
         with:
           ruby-version: '3.2'
           bundler-cache: true
+          working-directory: docs
 
       - name: Install gems
         run: bundle install --jobs 4 --retry 3
