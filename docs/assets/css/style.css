@@ -1,9 +1,9 @@
 :root{
-  /* base palette switched to cyan */
+  /* base palette switched to blue */
   --bg:#0d0d0d;
   --text-main:#e8e8e8;
-  --accent:#63c3ff; /* cold cyan matching QR */
-  --accent-dim:#3b8ab8; /* darker for borders/hover */
+  --accent:#1e90ff; /* dodger blue for links */
+  --accent-dim:#1464b3; /* darker shade for hover/focus */
   /* warm accent for project fragments (tuned toward QR left‑upper corner) */
   --warm:#ffa26e;
   --warm-dim:#d88555;
@@ -54,7 +54,7 @@ h3{color:var(--accent);margin:2rem 0 1rem;font-size:1.1rem;}
 }
 /* add breathing space above and below */
 .sidebar-left .profile-photo{margin-top:8px;margin-bottom:8px;}
-.sidebar-left .qr{margin-top:8px;margin-bottom:8px;border:1px solid var(--cold-dim);border-radius:10px;}
+.sidebar-left .qr{margin-top:8px;margin-bottom:8px;border:1px solid var(--accent-dim);border-radius:10px;}
 /* Location and email same size as h2 (Контакты) */
 .sidebar-left .location{font-size:1.25rem;color:var(--white);margin-top:calc(-0.2 * var(--sidebar-gap));}
 
@@ -91,13 +91,13 @@ a.proj:hover{text-decoration:underline;}
 a.proj-frag{color:var(--warm);text-decoration:underline;font-weight:700;}
 a.proj-frag:hover{color:var(--warm-dim);}
 
-/* Skills header lines: bigger by 20% and blue (accent) */
+/* Skills header lines: bigger by 20% and no special color */
 .skills{text-align:center;line-height:1.6;font-size:1.2em;color:var(--text-main);} 
-.skills .highlight{color:var(--accent);font-weight:600;}
+.skills .highlight{color:inherit;font-weight:600;}
 .skills .separator{color:var(--text-main);} /* pipes plain */
 
 /* Accent highlighting for key terms */
-.highlight{color:var(--accent);font-weight:600;}
+.highlight{color:inherit;font-weight:600;}
 
 /* Job titles styling: plain white and 20% smaller than headers (~1.1rem) */
 .job-title{color:var(--text-main);font-weight:600;font-size:1.1rem;}
