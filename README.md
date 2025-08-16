@@ -11,7 +11,7 @@
 **Airflow** | **PostgreSQL** | **pandas** | PySpark | scikit-learn | Bash | R  
 Работаю из Москвы
 
-[📥 Скачать полное резюме](https://github.com/aydaraliev/CV/raw/main/CV_Aliev_data_engineer.pdf) | [🌐 Веб-версия резюме](https://инженер-данных.рф)
+[📥 Скачать резюме (.pdf)](https://github.com/aydaraliev/CV/raw/main/CV_Aliev_data_engineer.pdf) | [🌐 Веб-версия резюме](https://инженер-данных.рф)
 
 ---
 
@@ -164,7 +164,7 @@
 
 <img src="./qr.png" width="50%">
 
-[📥 Скачать полное резюме (PDF)](https://github.com/aydaraliev/CV/raw/main/CV_Aliev_data_engineer.pdf)
+[📥 Скачать резюме (.pdf)](https://github.com/aydaraliev/CV/raw/main/CV_Aliev_data_engineer.pdf)
 
 </div>
 </details>
