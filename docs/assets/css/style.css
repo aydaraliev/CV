@@ -125,27 +125,11 @@ details.collapsible-details > summary::-webkit-details-marker{display:none;}
 details.collapsible-details > summary::marker{content:'';}
 details.collapsible-details > summary::before{content:'\25BA'; /* ► */ color:var(--warm); position:absolute; left:0; font-size:0.9rem; transform:rotate(0deg); transition:transform 0.2s ease, color 0.2s ease;}
 details.collapsible-details[open] > summary::before{transform:rotate(90deg); color:var(--warm-dim);}
-/* E-mail image: фиксируем размер и центрируем */
-.email-img-wrap{
-  display:flex;              /* центрируем */
-  justify-content:center;
-  width:100%;                /* растягиваем по ширине */
-  margin:8px 0;
-}
-
-.email-img{
+/* Email link styling - 25% larger */
+.email-link{
+  font-size:1.25rem; /* 25% larger than default */
   display:block;
-  margin:0 auto;             /* центрируем alt-текст при отсутствии изображения */
-  max-width:220px;
-  width:auto;
-  height:auto;
-  object-fit:contain;
-}
-
-/* Перебиваем общие правила сайдбара для почтового изображения */
-.sidebar-left img.email-img{
-  width:auto !important;
-  max-width:220px !important;
+  margin-top:8px;
 }
 
 /* Responsive layout adjustments for narrow viewports */

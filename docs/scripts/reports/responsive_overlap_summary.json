@@ -1,0 +1,53 @@
+{
+  "url": "http://localhost:4000/CV/",
+  "checkedAt": "2025-08-16T14:16:47.451Z",
+  "widths": [
+    320,
+    375,
+    414,
+    600,
+    768,
+    834,
+    1024,
+    1280,
+    1440
+  ],
+  "results": [
+    {
+      "width": 320,
+      "error": "Failed to load (404)"
+    },
+    {
+      "width": 375,
+      "error": "Failed to load (404)"
+    },
+    {
+      "width": 414,
+      "error": "Failed to load (404)"
+    },
+    {
+      "width": 600,
+      "error": "Failed to load (404)"
+    },
+    {
+      "width": 768,
+      "error": "Failed to load (404)"
+    },
+    {
+      "width": 834,
+      "error": "Failed to load (404)"
+    },
+    {
+      "width": 1024,
+      "error": "Failed to load (404)"
+    },
+    {
+      "width": 1280,
+      "error": "Failed to load (404)"
+    },
+    {
+      "width": 1440,
+      "error": "Failed to load (404)"
+    }
+  ]
+}
